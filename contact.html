@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaryan's Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url("R.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: #fffcfc;
+      }
+
+      header {
+        width: 100%;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 2px 10px rgba(254, 254, 254, 0.1);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #ff4081;
+      }
+
+      .contact-container {
+        display: flex;
+        flex: 1;
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-section {
+        flex: 1;
+        background-color: #e0f0ff;
+        padding: 40px;
+      }
+
+      .form-section h2 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-section input,
+      .form-section textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-section input[type="submit"] {
+        background-color: #ff4081;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+      }
+
+      .form-section input[type="submit"]:hover {
+        background-color: #e91e63;
+      }
+
+      .image-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f4ff;
+      }
+
+      .image-section img {
+        max-width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contact-container">
+      <div class="form-section">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="image-section">
+        <!-- Example support image -->
+        <img src="contact.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

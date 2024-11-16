@@ -1,0 +1,212 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #00bfa63;
+  color: #00bfa6;
+  line-height: 1.6;
+  background-color: #eb466b;
+}
+
+/* Navbar Styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 40px;
+
+  background-image: "R.jpeg";
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #fcf7f7;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #ebe5e5;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #357ab7;
+}
+
+/* Hero Image Styling */
+.hero-image {
+  max-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Circular Image Styling */
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Ensures the image fits well within the circle */
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+.hero-blob {
+  position: relative;
+  max-width: 40%;
+}
+
+#contact {
+  padding: 60px 20px;
+  background-color: #00bfa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ab7;
+}
+/* Response Message Styling */
+.response-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4a90e2;
+}
+
+.response-message img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+/* Navbar Link Hover Animation */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px; /* Adds space for the hover effect */
+}
+
+/* The blue dash effect */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4a90e2;
+  transition: width 0.3s ease-in-out;
+}
+
+/* On hover, the blue dash expands */
+nav ul li a:hover::after {
+  width: 100%;
+}
