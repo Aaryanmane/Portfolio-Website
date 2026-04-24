@@ -1,0 +1,132 @@
+.education {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  position: relative;
+}
+
+.education-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-color), var(--light-accent), transparent);
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  animation: slideInRight 0.6s ease backwards;
+}
+
+.education-item:nth-child(1) { animation-delay: 0.1s; }
+.education-item:nth-child(2) { animation-delay: 0.2s; }
+.education-item:nth-child(3) { animation-delay: 0.3s; }
+
+.edu-timeline-dot {
+  position: absolute;
+  left: -77px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: var(--secondary-color);
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.edu-content {
+  padding: 20px;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.institution {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.edu-duration {
+  font-size: 0.9rem;
+  color: var(--light-accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.degree-info {
+  margin-bottom: 15px;
+}
+
+.degree {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 5px 0;
+}
+
+.specialization {
+  display: block;
+  font-size: 0.95rem;
+  color: rgba(234, 234, 234, 0.7);
+  font-weight: 500;
+}
+
+.edu-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.highlight-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(243, 156, 18, 0.2);
+  border: 1px solid rgba(243, 156, 18, 0.3);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--light-accent);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .education-timeline::before {
+    left: 15px;
+  }
+
+  .education-item {
+    margin-left: 60px;
+  }
+
+  .edu-timeline-dot {
+    left: -43px;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .institution {
+    font-size: 1.1rem;
+  }
+
+  .edu-duration {
+    align-self: flex-start;
+  }
+}
+
