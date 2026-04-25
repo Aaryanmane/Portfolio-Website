@@ -42,23 +42,26 @@
 
 .patent-ribbon {
   position: absolute;
-  top: 20px;
-  right: -30px;
+  top: -8px;
+  right: -40px;
+  width: 200px;
   transform: rotate(45deg);
   z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .patent-ribbon span {
   display: block;
-  background: linear-gradient(135deg, var(--accent-color), var(--light-accent));
+  background: linear-gradient(135deg, #f39c12, #e67e22);
   color: white;
-  padding: 8px 50px;
-  font-size: 0.8rem;
-  font-weight: 700;
+  padding: 12px 40px;
+  font-size: 0.75rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  writing-mode: horizontal-tb;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .patent-header {
@@ -198,10 +201,16 @@
     grid-template-columns: 1fr;
   }
 
-  .patent-ribbon {
-    right: -35px;
-    top: 15px;
-  }
+   .patent-ribbon {
+     right: -45px;
+     top: -10px;
+     width: 180px;
+   }
+
+   .patent-ribbon span {
+     padding: 10px 35px;
+     font-size: 0.7rem;
+   }
 
   .patent-header {
     padding-right: 0;

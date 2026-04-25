@@ -25,18 +25,17 @@ const Hero = () => {
         <div className="hero-image">
           <div className="avatar">
             <div className="avatar-inner">
-              <span>AM</span>
+              <img src={require('../Aaryan_image.jpeg')} alt="Profile" className="profile-image" />
             </div>
           </div>
         </div>
       </div>
-      <div className="scroll-indicator">
-        <div className="mouse"></div>
-        <div className="wheel"></div>
-      </div>
+      {/*<div className="scroll-indicator">*/}
+      {/*  <div className="mouse"></div>*/}
+      {/*  <div className="wheel"></div>*/}
+      {/*</div>*/}
     </section>
   );
 };
 
 export default Hero;
-
