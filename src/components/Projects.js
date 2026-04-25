@@ -13,33 +13,33 @@ const Projects = () => {
         'Optimized model performance and accuracy'
       ],
       technologies: ['Python', 'TensorFlow', 'Flask', 'Machine Learning', 'Data Analysis'],
-      link: '#',
+      link: 'https://github.com/Aaryanmane/Lymphography-Classification-Tool',
       status: 'Completed'
     },
     {
-      title: 'Event-Driven Delivery Workers System',
-      description: 'Built 3 production-grade delivery workers (Solace, webhook, email) with JSONata transformation for event-driven workflows.',
+      title: 'House Price Prediction',
+      description: 'A machine learning project for predicting house prices using advanced regression models and feature engineering.',
       highlights: [
-        'Implemented JSON-to-JSON transformation using JSONata',
-        'Built asynchronous event processing pipeline',
-        'Integrated Solace message broker',
-        'Webhook and email delivery integration'
+        'Data preprocessing and feature engineering',
+        'Multiple regression model implementation',
+        'Model evaluation and optimization',
+        'Price prediction accuracy improvement'
       ],
-      technologies: ['Java', 'Spring Boot', 'Solace', 'JSONata', 'Event-Driven Architecture'],
-      link: '#',
-      status: 'Production'
+      technologies: ['Python', 'Machine Learning', 'Data Analysis', 'Regression Models'],
+      link: 'https://github.com/Aaryanmane/House-Price-Prediction',
+      status: 'Completed'
     },
     {
-      title: 'REST API Gateway with DLQ Management',
-      description: 'Scalable REST API services with comprehensive error handling and Dead Letter Queue management for production banking systems.',
+      title: 'Portfolio Website',
+      description: 'A modern, responsive portfolio website built with React showcasing projects, skills, and professional experience with smooth animations and interactive UI elements.',
       highlights: [
-        'Designed scalable API architecture',
-        'Implemented DLQ event processing',
-        'Exception handling and recovery mechanisms',
-        'Production-grade observability'
+        'Responsive design across all devices',
+        'Smooth scroll animations and transitions',
+        'Interactive component-based architecture',
+        'Production-ready deployment on Render'
       ],
-      technologies: ['Java', 'Spring Boot', 'REST APIs', 'DLQ', 'Database Management'],
-      link: '#',
+      technologies: ['React', 'CSS3', 'JavaScript', 'Responsive Design', 'Web Development'],
+      link: 'https://github.com/Aaryanmane/Portfolio-Website/tree/master',
       status: 'Production'
     }
   ];
@@ -74,7 +74,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              <a href={project.link} className="btn btn-small">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-small">
                 View Project →
               </a>
             </div>

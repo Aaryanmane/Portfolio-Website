@@ -29,9 +29,9 @@ const Patents = () => {
         <div className="patents-content">
           {patents.map((patent, index) => (
             <div key={index} className="patent-card card">
-              <div className="patent-ribbon">
-                <span>Published</span>
-              </div>
+              {/*<div className="patent-ribbon">*/}
+              {/*  <span>Awaiting Request for Examination</span>*/}
+              {/*</div>*/}
 
               <div className="patent-header">
                 <h3 className="patent-title">{patent.title}</h3>
