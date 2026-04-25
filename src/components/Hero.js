@@ -18,7 +18,7 @@ const Hero = () => {
             Production experience in banking microservices. Strong in REST APIs, async workflows, and system debugging.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Download CV</button>
+            <a href="https://drive.google.com/file/d/1XqU3A8j73OcfPRHMWLRzww7FVLF_XQ_W/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Download CV</a>
             <button className="btn">View My Work</button>
           </div>
         </div>
